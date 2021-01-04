@@ -5,8 +5,8 @@ using UnityEngine;
 public class GameControllerScript : MonoBehaviour
 {
 
-    [SerializeField] public AudioClip block;
-    [SerializeField] public AudioClip oops;
+    public AudioClip block;
+    public AudioClip oops;
     AudioSource audioSource;
 
     private int tagx = 0;
@@ -39,39 +39,14 @@ public class GameControllerScript : MonoBehaviour
                     Debug.Log(tagx);
                     audioSource.PlayOneShot(block, 0.3F);
                     break;
-                case 3:
-                    Debug.Log(tagx);
+                //case 3:
+                    //Debug.Log(tagx);
                     //audioSource.PlayOneShot(oops, 0.7F);
-                    break;
+                    //break;
                 default:
                     break;
             }
         }
-        /*
-       switch (tagx)
-       {
-
-           case "cube":
-               //vlm = 0.8F;
-               //Debug.Log(tagx);
-               audioSource.PlayOneShot(block, 0.8F);
-               break;
-           case "ground":
-               //vlm = 0.3F;
-               //Debug.Log(tagx);
-               audioSource.PlayOneShot(block, 0.3F);
-               break;
-           case "UnityChan":
-               //Debug.Log(tagx);
-               //audioSource.PlayOneShot(block, 0.0F);
-               break;
-           default:
-               //gameController.AudioOn(0.0f);
-               break;
-       }
-       //ブロックが衝突したらボリュームをあげる
-       //Debug.Log(vlm);
-       //audioSource.PlayOneShot(block, vlm);
-           */
+        
     }
 }
