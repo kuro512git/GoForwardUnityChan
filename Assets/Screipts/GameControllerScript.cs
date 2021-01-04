@@ -6,7 +6,7 @@ public class GameControllerScript : MonoBehaviour
 {
 
     public AudioClip block;
-    public AudioClip oops;
+
     AudioSource audioSource;
 
     private int tagx = 0;
@@ -39,10 +39,6 @@ public class GameControllerScript : MonoBehaviour
                     Debug.Log(tagx);
                     audioSource.PlayOneShot(block, 0.3F);
                     break;
-                //case 3:
-                    //Debug.Log(tagx);
-                    //audioSource.PlayOneShot(oops, 0.7F);
-                    //break;
                 default:
                     break;
             }

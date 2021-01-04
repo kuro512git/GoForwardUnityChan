@@ -43,8 +43,7 @@ public class AudioController : MonoBehaviour
 
         if ( ( tag != "UnityChan") && (len > 0.1))
         {
-            
-            switch (tag)
+            switch (collision.gameObject.tag)
             {
                 case "cube":
                     Debug.Log(tag);
@@ -54,13 +53,9 @@ public class AudioController : MonoBehaviour
                     Debug.Log(tag);
                     gameController.AudioOn(2);
                     break;
-                //case "UnityChan":
-                    //Debug.Log(tag);
-                    //gameController.AudioOn(3);
-                    //break;
                 default:
                     Debug.Log(tag);
-                    //gameController.AudioOn(0.0f);
+                    //gameController.AudioOn(0);
                     break;
             }
         }
