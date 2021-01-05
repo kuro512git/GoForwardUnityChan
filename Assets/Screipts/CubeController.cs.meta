@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - sound1: {fileID: 8300000, guid: 4f57e820d79333849832fc1b6afe31c7, type: 3}
+  - block: {fileID: 8300000, guid: 4f57e820d79333849832fc1b6afe31c7, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
