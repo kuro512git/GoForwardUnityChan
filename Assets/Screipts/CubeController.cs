@@ -58,7 +58,7 @@ public class CubeController : MonoBehaviour
                     audioSource.UnPause();
                     break;
             }
-            //以下の書き方では効果音が鳴らなかった
+            //以下の書き方の場合には、prefabにアタッチしたスクリプトに音をアタッチすることが必要
             //audioSource.PlayOneShot(block, 1F);
             //audioSource.volume = 1;
         }
